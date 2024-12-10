@@ -1,23 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "./../styles/navbar.css";
 
-const Navbar = () => {
-
-
+const Navbar = ({ onNavigate }) => {
   return (
     <nav className="navbar">
       <div className="container">
         <ul className="nav-links">
           <li>
-            <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
-              Deploy com React
-            </Link>
+            <button className="btn-nav" onClick={() => onNavigate("react")}>Deploy Guide React</button>
           </li>
           <li>
-            <Link to="/vite" onClick={() => setIsMobileMenuOpen(false)}>
-              Deploy com Vite
-            </Link>
+            <button className="btn-nav" onClick={() => onNavigate("vite")}>Deploy Guide Vite</button>
           </li>
         </ul>
       </div>
