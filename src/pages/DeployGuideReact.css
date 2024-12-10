@@ -1,0 +1,120 @@
+/* Estilos Gerais */
+.deploy-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  .deploy-card {
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .deploy-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .deploy-intro {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .deploy-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .deploy-section {
+    margin-bottom: 30px;
+  }
+  
+  .deploy-section-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3a3a3a;
+    border-bottom: 2px solid #5271FF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .deploy-text {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .deploy-code-block {
+    background-color: #282c34;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .deploy-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  
+  .deploy-list li {
+    margin-bottom: 10px;
+    color: #555;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .deploy-list li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #5271FF;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .deploy-card {
+      padding: 10px;
+    }
+  
+    .deploy-title {
+      font-size: 30px;
+    }
+  
+    .deploy-intro {
+      font-size: 16px;
+    }
+  
+    .deploy-section-title {
+      font-size: 22px;
+    }
+  
+    .deploy-text {
+      font-size: 14px;
+    }
+  
+    .deploy-code-block {
+      font-size: 14px;
+    }
+  
+    .deploy-list li {
+      font-size: 14px;
+    }
+  }
+  
