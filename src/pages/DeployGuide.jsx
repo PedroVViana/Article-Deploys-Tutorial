@@ -33,10 +33,10 @@ git push -u origin main`}
         <p>Abra o arquivo <code>package.json</code> e adicione as seguintes configurações:</p>
         <pre className="code-snippet">
           {`"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
-"homepage": "https://SeuUsuario.github.io/nome-do-repositorio",`}
+    "homepage": "https://SeuUsuario.github.io/nome-do-repositorio", (inicio do script)
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+},`}
         </pre>
       </section>
 
